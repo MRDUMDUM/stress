@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+
+        <Button
+            android:text="Spiral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:id="@+id/spi_button" />
+
+        <Button
+            android:text="Infinity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spi_button"
+            android:layout_alignLeft="@+id/spi_button"
+            android:layout_alignStart="@+id/spi_button"
+            android:layout_marginTop="50dp"
+            android:id="@+id/inf_button" />
+
+        <Button
+            android:text="Heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inf_button"
+            android:layout_alignLeft="@+id/inf_button"
+            android:layout_alignStart="@+id/inf_button"
+            android:layout_marginTop="50dp"
+            android:id="@+id/hea_button" />
+
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/bac_button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/red_button"
+            android:background="@android:color/holo_red_dark"
+            style="@android:style/Widget.Button"
+            android:layout_alignBaseline="@+id/inf_button"
+            android:layout_alignBottom="@+id/inf_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blue_button"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_above="@+id/red_button"
+            android:layout_alignLeft="@+id/red_button"
+            android:layout_alignStart="@+id/red_button"
+            style="@android:style/Widget.Button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/green_button"
+            android:background="@android:color/holo_green_light"
+            android:layout_below="@+id/red_button"
+            android:layout_alignLeft="@+id/red_button"
+            android:layout_alignStart="@+id/red_button"
+            style="@android:style/Widget.Button" />
+
+        <TextView
+            android:text="chose a paint
+      colour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_above="@+id/blue_button"
+            android:layout_alignEnd="@+id/blue_button"
+            android:layout_alignRight="@+id/blue_button"
+            android:layout_alignStart="@+id/blue_button"
+            android:layout_alignLeft="@+id/blue_button"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dumdum.stress">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DrawTheLine">
+        </activity>
+        <activity android:name=".SpiralLine">
+        </activity>
+        <activity android:name=".InfinityLine">
+        </activity>
+        <activity android:name=".HeartLine">
+        </activity>
+        <activity android:name=".PopBobble">
+        </activity>
+    </application>
+
+</manifest>
