@@ -21,7 +21,9 @@ public class CanvasDraw extends View{
     private Paint mPaint;
     private float mX, mY;
     private static final float TOLERANCE = 5;
+
     Context context;
+
 
 
 
@@ -29,6 +31,7 @@ public class CanvasDraw extends View{
     public CanvasDraw(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
+
 
         mPath = new Path();
 

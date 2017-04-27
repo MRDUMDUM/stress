@@ -13,6 +13,7 @@ public class SpiralLine extends Activity {
     public Button bac_button;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,7 @@ public class SpiralLine extends Activity {
         canvasDraw = (CanvasDraw) findViewById(R.id.canvas);
         ImageView spiralImageView = (ImageView) findViewById(R.id.imageView_spiral);
         spiralImageView.setImageResource(R.drawable.spiral);
+
         init();
     }
 
@@ -35,7 +37,9 @@ public class SpiralLine extends Activity {
             public void onClick(View v) {
                 Intent draw = new Intent(SpiralLine.this, DrawTheLine.class);
                 startActivity(draw);
+
             }
         });
     }
-}
+ }
+

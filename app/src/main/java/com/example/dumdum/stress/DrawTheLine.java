@@ -8,62 +8,56 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class DrawTheLine extends Activity{
+
+
+public class DrawTheLine extends Activity {
 
     public Button bac_button;
     public Button spi_button;
     public Button inf_button;
     public Button hea_button;
-    /* public Button red_button;
-    public Button green_button;
-    public Button blue_button;
-    */
 
-    public void init(){
-        bac_button = (Button)findViewById(R.id.bac_button);
+
+
+
+    public void init() {
+        bac_button = (Button) findViewById(R.id.bac_button);
         bac_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent draw = new Intent(DrawTheLine.this,MainActivity.class);
+                Intent draw = new Intent(DrawTheLine.this, MainActivity.class);
                 startActivity(draw);
-            }
-        });
-        spi_button = (Button)findViewById(R.id.spi_button);
-        spi_button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent draw = new Intent(DrawTheLine.this,SpiralLine.class);
-                startActivity(draw);
-            }
-        });
-        inf_button = (Button)findViewById(R.id.inf_button);
-        inf_button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent draw = new Intent(DrawTheLine.this,InfinityLine.class);
-                startActivity(draw);
-            }
-        });
-        hea_button = (Button)findViewById(R.id.hea_button);
-        hea_button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent draw = new Intent(DrawTheLine.this,HeartLine.class);
-                startActivity(draw);
-            }
-        });
-    }
-    /*
-    public void colourChange(View view){
-        red_button = (Button)findViewById(R.id.red_button);
-        red_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // Intent red
 
             }
+        }  );
+        spi_button = (Button) findViewById(R.id.spi_button);
+        spi_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent draw = new Intent(DrawTheLine.this, SpiralLine.class);
+                startActivity(draw);
+            }
         });
-    }*/
+        inf_button = (Button) findViewById(R.id.inf_button);
+        inf_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent draw = new Intent(DrawTheLine.this, InfinityLine.class);
+                startActivity(draw);
+            }
+        });
+        hea_button = (Button) findViewById(R.id.hea_button);
+        hea_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent draw = new Intent(DrawTheLine.this, HeartLine.class);
+                startActivity(draw);
+            }
+        });
+
+
+    }
+
 
 
     @Override
@@ -71,6 +65,8 @@ public class DrawTheLine extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawtheline);
         init();
-        //colourChange();
     }
+
+
+
 }
